@@ -13,7 +13,7 @@ public class Main {
 
         for (String word : words) {
             if (vowels.contains(word.charAt(0))) {
-                output.append(word).append("way");
+                output.append(word).append("-way");
             }
             else {
                 for (int i = 0; i < word.length(); i++) {
@@ -41,5 +41,7 @@ public class Main {
         System.out.println(pigLatinize("ash"));
         System.out.println(pigLatinize("robert"));
         System.out.println(pigLatinize("ollie"));
+        System.out.println(pigLatinize("here you go robert"));
+        System.out.println(pigLatinize("this is my attempt and the cleanest i could get it"));
     }
 }
